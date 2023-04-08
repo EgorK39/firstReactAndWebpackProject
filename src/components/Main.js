@@ -1,13 +1,12 @@
 import React from "react";
+import Countries from "./Countries";
 import "../styles/Main.css";
 
 class Main extends React.Component {
     render() {
         return (
             <main>
-                <div>
-                    <h1>Hello!</h1>
-                </div>
+                <Countries/>
             </main>
         )
     }
