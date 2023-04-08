@@ -1,11 +1,11 @@
-import React, {useState, Fragment} from "react";
+import * as React from "react";
 import axios from "axios";
 import Table from 'react-bootstrap/Table';
 import Country from "./Country";
 import "../styles/Countries.css";
 
 function Countries() {
-    const [countries, setCounties] = useState([]);
+    const [countries, setCounties] = React.useState([]);
     if (!countries.length) {
         axios.get('https://restcountries.com/v3.1/region/europe').then(res => {
             console.log(res);
@@ -14,7 +14,7 @@ function Countries() {
     }
 
     return (
-        <Fragment>
+        <React.Fragment>
             <h1>Hello from Countries</h1>
             <Table className={'countries'} striped bordered hover variant="dark">
                 <thead>
@@ -29,7 +29,7 @@ function Countries() {
                 )}
                 </tbody>
             </Table>
-        </Fragment>
+        </React.Fragment>
     );
 }
 
