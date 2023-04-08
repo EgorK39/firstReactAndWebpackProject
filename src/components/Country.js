@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Button from 'react-bootstrap/Button';
+import PropTypes from "prop-types";
 import "../styles/Country.css";
 
 function Country(props) {
@@ -19,4 +20,7 @@ function Country(props) {
     );
 }
 
+Country.propTypes = {
+    country: PropTypes.object
+}
 export default Country;

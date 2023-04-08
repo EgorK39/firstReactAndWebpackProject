@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import PropTypes from "prop-types";
 import "../styles/Header.css";
 
 
@@ -14,4 +15,7 @@ function Header(props) {
     )
 }
 
+Header.propTypes  = {
+    buttonName: PropTypes.string
+}
 export default Header;
