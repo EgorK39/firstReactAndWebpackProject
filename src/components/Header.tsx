@@ -15,7 +15,7 @@ function Header(props) {
     )
 }
 
-Header.propTypes  = {
-    buttonName: PropTypes.string
-}
+// Header.propTypes  = {
+//     buttonName: PropTypes.string
+// }
 export default Header;

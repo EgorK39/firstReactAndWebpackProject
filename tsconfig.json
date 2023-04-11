@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
         "jsx": "react",
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "rootDir": "src",
+        "outDir": "dist"
     },
     "exclude": [
         "node_modules"

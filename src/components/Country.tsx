@@ -20,7 +20,7 @@ function Country(props) {
     );
 }
 
-Country.propTypes = {
-    country: PropTypes.object
-}
+// Country.propTypes = {
+//     country: PropTypes.object
+// }
 export default Country;
